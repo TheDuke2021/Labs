@@ -30,11 +30,4 @@ int main()
 	int r;
 	printf("%s", "Input height\n");
 	scanf_s("%d", &h);
-	printf("%s", "and radius: ");
-	scanf_s("%d", &r);
-	double square = pi * r * r * h;
-	int squareInt = (int)square;
-	printf("%s", "square is: ");
-	printf("%d", squareInt);
-	printf("%s", "\n");
 }
