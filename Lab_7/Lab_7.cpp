@@ -5,6 +5,7 @@
 
 using namespace std;
 
+char* locale = setlocale(LC_ALL, "");
 void task_1();
 void task_2();
 void task_3();
@@ -32,10 +33,10 @@ void task_1()
 	//   Определить значение этого же угла в радианах, учитывая, 
 	//   что 180◦ = π радианов.
 	int a;
-	cout << "Input angle: " << endl;
+	cout << "Введите угол (в градусах): " << endl;
 	cin >> a;
 	double rad = (double) a/180;
-	printf_s("%s %.2lf%s", "\nIn radians: ", rad, "pi");
+	printf_s("%s %.2lf%s", "\nВ радианах: ", rad, "pi");
 
 }
 
@@ -46,10 +47,10 @@ void task_2()
 	//   Определить значение этого же угла в градусах, 
 	//	 учитывая, что 180◦ = π радианов
 	double a;
-	cout << "Input angle: " << endl;
+	cout << "Введите угол (в радианах): " << endl;
 	cin >> a;
 	int deg = (int) (a*180 / 3.14);
-	cout << "\nIn degree: " << deg << endl;
+	cout << "\nВ градусах: " << deg << endl;
 
 }
 
@@ -59,11 +60,11 @@ void task_3()
 	//   сколько стоит 1 кг и Y кг этих же конфет.
 	int X, Y, A;
 	double price;
-	cout << "Input X, A and Y: ";
+	cout << "Введите X, A и Y: ";
 	cin >> X >> A >> Y;
 	price = A / X;
-	cout << "\n1kg price is: " << price << endl;
-	cout << "Y kg price is: " << price * Y << endl;
+	cout << "\nЦена за 1кг: " << price << endl;
+	cout << "Цена за Y кг: " << price * Y << endl;
 }
 
 void task_4()
@@ -71,11 +72,11 @@ void task_4()
 	//4. Скорость первого автомобиля V1 км/ч, второго — V2 км/ч, расстояние между ними S км. 
 	//   Определить расстояние между ними через T часов, если автомобили удаляются друг от друга. 
 	int v1, v2, T;
-	cout << "\nInput v1, v2, T: " << endl;
+	cout << "\nВведите v1, v2, T: " << endl;
 	cin >> v1 >> v2 >> T;
 	int v = v1 + v2;
 	int r = v * T + 5;
-	cout << "\nDistance is: " << r << endl;
+	cout << "\nРасстояние: " << r << endl;
 
 }
 
@@ -84,12 +85,12 @@ void task_5()
 	//5. Решить линейное уравнение A·x + B = 0, заданное своими 
 	//   коэффициентами A и B (коэффициент A не равен 0).
 	double A, B;
-	cout << "\nInput A and B: " << endl;
+	cout << "\nВведите A и B: " << endl;
 	cin >> A >> B;
 	//коэффициент А не равен 0
 	if (A == 0) return;
 	double x = -B / A;
-	cout << "\nAnswer is: " << x << endl;
+	cout << "\nОтвет: " << x << endl;
 }
 
 void task_6()
@@ -103,7 +104,7 @@ void task_6()
 
 	//Входные данные
 	double A1, A2, B1, B2, C1, C2;
-	cout << "\nInput A1, A2, B1, B2, C1, C2: " << endl;
+	cout << "\nВведите A1, A2, B1, B2, C1, C2: " << endl;
 	cin >> A1 >> A2 >> B1 >> B2 >> C1 >> C2;
 	//Ответы
 	double delta, deltaX, deltaY, x, y;
@@ -112,9 +113,9 @@ void task_6()
 	deltaY = A1 * C2 - C1 * A2;
 	if (delta == 0)
 		if (deltaX == 0 && deltaY == 0)
-			cout << "Infinity or no solutions";
+			cout << "Бесконечное количество решений, либо решений нет";
 		else
-			cout << "NO solutions";
+			cout << "НЕТ решений";
 	else {
 		x = deltaX / delta;
 		y = deltaY / delta;

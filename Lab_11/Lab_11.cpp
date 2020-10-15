@@ -5,6 +5,7 @@
 
 using namespace std;
 
+char* locale = setlocale(LC_ALL, "");
 void task_1();
 void task_2();
 void task_3();
@@ -17,12 +18,12 @@ int main()
 	//Каждый task - это отдельное задание в лабораторной работе
 	//Можно закомментировать нужные строчки, чтобы проверить 
 	//работоспособность отдельно взятого задания
-	//task_1();
-	//task_2();
-	//task_3();
-	//task_4();
-	//task_5();
-	//task_6();
+	task_1();
+	task_2();
+	task_3();
+	task_4();
+	task_5();
+	task_6();
 }
 
 void task_1()
@@ -33,7 +34,7 @@ void task_1()
 	//   значений, а если равны, то присвоить переменным нулевые значения. 
 	//   Вывести новые значения переменных A и B.
 	int a, b;
-	cout << "Input a and b: " << endl;
+	cout << "Введите a и b: " << endl;
 	cin >> a >> b;
 	if (a != b) {
 		a = max(a, b);
@@ -41,7 +42,7 @@ void task_1()
 	}
 	else
 		a = b = 0;
-	cout << "\nA and B now are: " << a << " " << b;
+	cout << "\nНовые значения A и B: " << a << " " << b;
 
 }
 
@@ -51,14 +52,14 @@ void task_2()
 	//2. Даны три числа. Найти сумму двух наибольших из них
 	
 	int a, b, c;
-	cout << "Input a, b, c: " << endl;
+	cout << "Введите a, b, c: " << endl;
 	cin >> a >> b >> c;
 	//Найдем наименьшее из них
 	int min = a;
 	if (b < min) min = b;
 	if (c < min) min = c;
 	int sum = a + b + c - min;
-	cout << "\nSum is: " << sum << endl;
+	cout << "\nСумма: " << sum << endl;
 
 }
 
@@ -69,7 +70,7 @@ void task_3()
 	//   точку и ее расстояние от точки A.
 	double xA, xB, xC, yA, yB, yC;
 	
-	cout << "Input x and y of points A, B, C: ";
+	cout << "Введите координаты точек A, B, C: ";
 	cin >> xA >> yA >> xB >> yB >> xC >> yC;
 	int AB = sqrt(pow(xA-xB, 2) + pow(yA - yB, 2));
 	int AC = sqrt(pow(xA - xC, 2) + pow(yA - yC, 2));
@@ -79,7 +80,7 @@ void task_3()
 		min = AC;
 		point = 'C';
 	}
-	cout << "\nPoint is: " << point << ", length is: " << min <<endl;
+	cout << "\nБлижайшая точка: " << point << ", длина: " << min <<endl;
 }
 
 void task_4()
@@ -87,12 +88,12 @@ void task_4()
 	//4. Даны координаты точки, не лежащей на координатных осях OX и OY. 
 	//   Определить номер координатной четверти, в которой находится данная точка
 	double x, y;
-	cout << "\nInput x and y: " << endl;
+	cout << "\nВведите x и y: " << endl;
 	cin >> x >> y;
-	if (x >= 0 && y >= 0) cout << "\nAnswer is: I";
-	if (x < 0 && y >= 0) cout << "\nAnswer is: II";
-	if (x < 0 && y < 0) cout << "\nAnswer is: III";
-	if (x >= 0 && y < 0) cout << "\nAnswer is: IV";
+	if (x >= 0 && y >= 0) cout << "\nОтвет: I";
+	if (x < 0 && y >= 0) cout << "\nОтвет: II";
+	if (x < 0 && y < 0) cout << "\nОтвет: III";
+	if (x >= 0 && y < 0) cout << "\nОтвет: IV";
 
 }
 
@@ -101,20 +102,20 @@ void task_5()
 	//5. Дано целое число. Вывести его строку-описание вида «отрицательное четное число», 
 	//   «нулевое число», «положительное нечетное число» и т. д.
 	int x;
-	cout << "\nInput number: " << endl;
+	cout << "\nВведите число: " << endl;
 	cin >> x;
 	if (x == 0) {
-		cout << "\nNull";
+		cout << "\nНулевое число";
 		return;
 	}
 	if (x > 0)
-		cout << "\nPositive ";
+		cout << "\nПоложительное ";
 	else
-		cout << "\nNegative ";
+		cout << "\nОтрицательное ";
 	if (x % 2 == 0)
-		cout << "even";
+		cout << "четное";
 	else
-		cout << "odd";
+		cout << "нечетное";
 
 }
 
@@ -124,18 +125,18 @@ void task_6()
 	//   «четное двузначное число», «нечетное трехзначное число» и т. д.
 
 	int x;
-	cout << "\nInput number: " << endl;
+	cout << "\nВведите число: " << endl;
 	cin >> x;
 	if (x % 2 == 0)
-		cout << "\nEven ";
+		cout << "\nЧетное ";
 	else
-		cout << "\nOdd ";
+		cout << "\nНечетное ";
 
 	if (x < 10) 
-		cout << "one-digit number";
+		cout << "однозначное";
 	else if (x < 100 && x >= 10 )
-		cout << "two-digit number";
+		cout << "двузначное";
 	else
-		cout << "three-digit number";
+		cout << "трехзначное";
 
 }

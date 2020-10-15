@@ -5,6 +5,7 @@
 
 using namespace std;
 
+char* locale = setlocale(LC_ALL, "");
 void task_1();
 void task_2();
 void task_3();
@@ -16,11 +17,11 @@ int main()
 	//Каждый task - это отдельное задание в лабораторной работе
 	//Можно закомментировать нужные строчки, чтобы проверить 
 	//работоспособность отдельно взятого задания
-	//task_1();
-	//task_2();
+	task_1();
+	task_2();
 	task_3();
-	//task_4();
-	//task_5();
+	task_4();
+	task_5();
 }
 
 void task_1()
@@ -29,9 +30,9 @@ void task_1()
 	//1. С начала суток прошло N секунд (N — целое). Найти количество секунд, 
 	//   прошедших с начала последней минуты.
 	int N;
-	cout << "Input seconds: " << endl;
+	cout << "Введите секунды: " << endl;
 	cin >> N;
-	cout << "\nAnswer is: " << N % 60;
+	cout << "\nОтвет: " << N % 60;
 
 }
 
@@ -42,10 +43,10 @@ void task_2()
 	//   . . . , 6 — суббота. Дано целое число K, лежащее в диапазоне 1–365. Определить номер дня 
 	//   недели для K-го дня года, если известно, что в этом году 1 января было понедельником.
 	int K;
-	cout << "\nInput K: " << endl;
+	cout << "\nВведите K: " << endl;
 	cin >> K;
 	//Остаток от деления на 7
-	cout << "\nNumber is: " << K % 7 << endl;
+	cout << "\nНомер: " << K % 7 << endl;
 	
 
 }
@@ -57,9 +58,9 @@ void task_3()
 	//   лежащее в диапазоне 1–7. Определить номер дня недели для K-го дня года, 
 	//   если известно, что в этом году 1 января было днем недели с номером N
 	int N, K;
-	cout << "\nInput N and K: " << endl;
+	cout << "\nВведите N и K: " << endl;
 	cin >> N >> K;
-	cout << "\nAnswer is: " << (K+N-2) % 7 + 1 << endl;
+	cout << "\nОтвет: " << (K+N-2) % 7 + 1 << endl;
 }
 
 void task_4()
@@ -68,12 +69,12 @@ void task_4()
 	//   возможное количество квадратов со стороной C (без наложений). Найти количество квадратов, 
 	//   размещенных на прямоугольнике, а также площадь незанятой части прямоугольника. 
 	int a, b, c;
-	cout << "\nInput a, b, c: " << endl;
+	cout << "\nВведите a, b, c: " << endl;
 	cin >> a >> b >> c;
 	int square1 = a * b;
 	int square2 = c * c;
-	cout << "\n Number of squares is: " << square1/square2 << endl;
-	cout << "\n Rest is: " << square1 % square2 << endl;
+	cout << "\nКоличество квадратов: " << square1/square2 << endl;
+	cout << "\nОстаток площади: " << square1 % square2 << endl;
 
 }
 
@@ -87,10 +88,10 @@ void task_5()
 	//1901 - 2000 - 20 столетие
 	//2001 - 2100 - 21 столетие
 	int num;
-	cout << "\nInput year: " << endl;
+	cout << "\nВведите год: " << endl;
 	cin >> num;
 	int ans = num / 100;
 	int back = num % 100;
 	if (back != 0) ans++;
-	cout << "\nAnswer is: " << ans << endl;
+	cout << "\nСтолетие: " << ans << endl;
 }

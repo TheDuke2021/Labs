@@ -5,6 +5,7 @@
 
 using namespace std;
 
+char* locale = setlocale(LC_ALL, "");
 void task_1();
 void task_2();
 void task_3();
@@ -29,9 +30,9 @@ void task_1()
 	//1. Дан размер файла в байтах. Найти количество полных килобайтов, 
 	//   которые занимает данный файл
 	int a;
-	cout << "Input bytes: " << endl;
+	cout << "Введите байты: " << endl;
 	cin >> a;
-	cout << "\nIn kilobytes: " << a / 1024;
+	cout << "\nВ Килобайтах: " << a / 1024;
 
 }
 
@@ -42,9 +43,9 @@ void task_2()
 	//   A размещено максимально возможное количество отрезков длины B 
 	//   (без наложений). Найти количество отрезков B, размещенных на отрезке A.
 	int a, b;
-	cout << "\nInput a and b: " << endl;
+	cout << "\nВведите a и b: " << endl;
 	cin >> a >> b;
-	cout << "\nAnswer is: " << a/b << endl;
+	cout << "\nОтвет: " << a/b << endl;
 
 }
 
@@ -54,21 +55,21 @@ void task_3()
 	//   длины A размещено максимально возможное количество отрезков длины B
 	//   (без наложений). Найти длину незанятой части отрезка A.
 	int a, b;
-	cout << "\nInput a and b: " << endl;
+	cout << "\nВведите a и b: " << endl;
 	cin >> a >> b;
-	cout << "\nAnswer is: " << a % b << endl;
+	cout << "\nОтвет: " << a % b << endl;
 }
 
 void task_4()
 {
 	//4. Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
 	int num;
-	cout << "\nInput num: " << endl;
+	cout << "\nВведите число: " << endl;
 	cin >> num;
 	int a = num / 10;
 	int b = num % 10;
 	int newNum = b * 10 + a;
-	cout << "\nAnswer is: " << newNum << endl;
+	cout << "\nОтвет: " << newNum << endl;
 
 }
 
@@ -77,10 +78,10 @@ void task_5()
 	//5. Дано трехзначное число. В нем зачеркнули первую слева цифру и
 	//   приписали ее справа. Вывести полученное число.
 	int num;
-	cout << "\nInput num: " << endl;
+	cout << "\nВведите число: " << endl;
 	cin >> num;
 	int a = num / 100;
 	int newNum = num % 100;
 	newNum = newNum * 10 + a;
-	cout << "\nAnswer is: " << newNum << endl;
+	cout << "\nОтвет: " << newNum << endl;
 }

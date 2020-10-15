@@ -1,4 +1,4 @@
 ﻿  Lab_11.cpp
-C:\Users\Дамир\source\repos\Labs\Lab_11\Lab_11.cpp(74,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
 C:\Users\Дамир\source\repos\Labs\Lab_11\Lab_11.cpp(75,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Дамир\source\repos\Labs\Lab_11\Lab_11.cpp(76,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
   Lab_11.vcxproj -> C:\Users\Дамир\source\repos\Labs\Lab_11\Debug\Lab_11.exe

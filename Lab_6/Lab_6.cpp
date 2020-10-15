@@ -5,6 +5,7 @@
 
 using namespace std;
 
+char* locale = setlocale(LC_ALL, "");
 void task_1();
 void task_2();
 void task_3();
@@ -32,13 +33,13 @@ void task_1()
 
 	//1. Поменять местами содержимое переменных A и B и вывести новые значения A и B.
 	int a, b;
-	cout << "Input a and b: " << endl;
+	cout << "Введите a и b: " << endl;
 	cin >> a >> b;
 	int temp = a;
 	a = b;
 	b = temp;
-	cout << "\n a is: " << a << endl;
-	cout << "\n b is: " << b << endl;
+	cout << "\n a: " << a << endl;
+	cout << "\n b: " << b << endl;
 
 }
 
@@ -49,15 +50,15 @@ void task_2()
 	//   переместив содержимое A в B, B — в C, C — в A, и вывести 
 	//   новые значения переменных A, B, C.
 	int a, b, c;
-	cout << "Input a, b, c\n";
+	cout << "Введите a, b, c\n";
 	cin >> a >> b >> c;
 	int temp = a;
 	a = c;
 	c = b;
 	b = temp;
-	cout << "\nA is " << a;
-	cout << "\nB is " << b;
-	cout << "\nC is " << c << endl;
+	cout << "\nA: " << a;
+	cout << "\nB: " << b;
+	cout << "\nC: " << c << endl;
 
 }
 
@@ -67,25 +68,25 @@ void task_3()
 	//   переместив содержимое A в C, C — в B, B — в A, и вывести новые 
 	//   значения переменных A, B, C.
 	int a, b, c;
-	cout << "\nInput a, b, c\n";
+	cout << "\nВведите a, b, c\n";
 	cin >> a >> b >> c;
 	int temp = c;
 	c = a;
 	a = b;
 	b = temp;
-	cout << "\nA is " << a;
-	cout << "\nB is " << b;
-	cout << "\nC is " << c << endl;
+	cout << "\nA: " << a;
+	cout << "\nB: " << b;
+	cout << "\nC: " << c << endl;
 }
 
 void task_4()
 {
 	//4. Найти значение функции y = 3x^6 − 6x^2 − 7 при данном значении x
 	double x;
-	cout << "\nInput x: " << endl;
+	cout << "\nВведите x: " << endl;
 	cin >> x;
 	double y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-	cout << "\ny is: " << y << endl;
+	cout << "\ny: " << y << endl;
 
 }
 
@@ -93,10 +94,10 @@ void task_5()
 {
 	//5. Найти значение функции y = 4(x−3)^6 − 7(x−3)^3 + 2 при данном значении x
 	double x;
-	cout << "\nInput x: " << endl;
+	cout << "\nВведите x: " << endl;
 	cin >> x;
 	double y = 4 * pow(x-3, 6) - 7 * pow(x-3, 3) + 2;
-	cout << "\ny is: " << y << endl;
+	cout << "\ny: " << y << endl;
 }
 
 void task_6()
@@ -104,12 +105,12 @@ void task_6()
 	//6. Дано число A. Вычислить A^8 , используя вспомогательную 
 	//   переменную и три операции умножения.
 	double A;
-	cout << "\nInput A: " << endl;
+	cout << "\nВведите A: " << endl;
 	cin >> A;
 	double A2 = A * A;
 	A2 = A2 * A2;
 	A2 = A2 * A2;
-	cout << "\nA is: " << A2 << endl;
+	cout << "\nA: " << A2 << endl;
 
 }
 
@@ -119,12 +120,12 @@ void task_7()
 	//7. Дано число A. Вычислить A^15, используя две вспомогательные 
 	//   переменные и пять операций умножения.
 	double A;
-	cout << "\nInput A: " << endl;
+	cout << "\nВведите A: " << endl;
 	cin >> A;
 	double A2 = A * A * A;
 	double A3 = A2 * A2;
 	A3 = A3 * A3;
 	A3 = A3 * A2;
-	cout << "\nA is: " << A3 << endl;
+	cout << "\nA: " << A3 << endl;
 
 }
