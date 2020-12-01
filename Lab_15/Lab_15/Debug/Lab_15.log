@@ -1,4 +1,4 @@
 ﻿  Lab_15.cpp
-C:\Users\Дамир\source\repos\Labs\Lab_15\Lab_15\Lab_15.cpp(55): warning C4715: Quarter: значение возвращается не при всех путях выполнения
 C:\Users\Дамир\source\repos\Labs\Lab_15\Lab_15\Lab_15.cpp(34): warning C4715: Sign: значение возвращается не при всех путях выполнения
+C:\Users\Дамир\source\repos\Labs\Lab_15\Lab_15\Lab_15.cpp(49): warning C4715: Quarter: значение возвращается не при всех путях выполнения
   Lab_15.vcxproj -> C:\Users\Дамир\source\repos\Labs\Lab_15\Debug\Lab_15.exe

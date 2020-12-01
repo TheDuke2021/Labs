@@ -35,16 +35,10 @@ int Sign(double x) {
 
 double RignS(double R1, double R2) {
 	double S1, S2;
+	//Используем формулу S = piR^2
 	S1 = PI * R1 * R1;
 	S2 = PI * R2 * R2;
 	return (S1 - S2);
-}
-
-double Fact2(int N) {
-	double prod = 1;
-	for (; N > 0; N -= 2)
-		prod *= N;
-	return prod;
 }
 
 int Quarter(double x, double y) {
@@ -54,15 +48,23 @@ int Quarter(double x, double y) {
 	if (x > 0 && y < 0) return 4;
 }
 
+double Fact2(int N) {
+	double prod = 1;
+	for (; N > 0; N -= 2)
+		prod *= N;
+	return prod;
+}
+
+
 int main()
 {
 	//Каждый task - это отдельное задание в лабораторной работе
 	//Можно закомментировать нужные строчки, чтобы проверить 
 	//работоспособность отдельно взятого задания
-	//task_1();
-	//task_2();
-	//task_3();
-	//task_4();
+	task_1();
+	task_2();
+	task_3();
+	task_4();
 	task_5();
 }
 
