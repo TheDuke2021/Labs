@@ -1,0 +1,6 @@
+﻿  Lab_12.cpp
+C:\Users\Дамир\source\repos\Labs\Lab_12\Lab_12.cpp(58,24): warning C4838: Преобразование из "char" в "unsigned char" требует сужающего преобразования.
+C:\Users\Дамир\source\repos\Labs\Lab_12\Lab_12.cpp(58,30): warning C4838: Преобразование из "char" в "unsigned char" требует сужающего преобразования.
+C:\Users\Дамир\source\repos\Labs\Lab_12\Lab_12.cpp(58,36): warning C4838: Преобразование из "char" в "unsigned char" требует сужающего преобразования.
+C:\Users\Дамир\source\repos\Labs\Lab_12\Lab_12.cpp(58,42): warning C4838: Преобразование из "char" в "unsigned char" требует сужающего преобразования.
+  Lab_12.vcxproj -> C:\Users\Дамир\source\repos\Labs\Lab_12\x64\Debug\Lab_12.exe
