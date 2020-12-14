@@ -1,0 +1,4 @@
+﻿  Lab_23.cpp
+C:\Users\Дамир\source\repos\Labs\Lab_23\Lab_23\Lab_23.cpp(116,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Дамир\source\repos\Labs\Lab_23\Lab_23\Lab_23.cpp(118,17): warning C4018: <: несоответствие типов со знаком и без знака
+  Lab_23.vcxproj -> C:\Users\Дамир\source\repos\Labs\Lab_23\Debug\Lab_23.exe
