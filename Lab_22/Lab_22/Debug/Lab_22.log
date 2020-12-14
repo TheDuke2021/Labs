@@ -1,0 +1,8 @@
+﻿  Lab_22.cpp
+C:\Users\Дамир\source\repos\Labs\Lab_22\Lab_22\Lab_22.cpp(55,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Дамир\source\repos\Labs\Lab_22\Lab_22\Lab_22.cpp(110,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Дамир\source\repos\Labs\Lab_22\Lab_22\Lab_22.cpp(145,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Дамир\source\repos\Labs\Lab_22\Lab_22\Lab_22.cpp(185,15): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Дамир\source\repos\Labs\Lab_22\Lab_22\Lab_22.cpp(233,18): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\Дамир\source\repos\Labs\Lab_22\Lab_22\Lab_22.cpp(246,18): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  Lab_22.vcxproj -> C:\Users\Дамир\source\repos\Labs\Lab_22\Debug\Lab_22.exe
