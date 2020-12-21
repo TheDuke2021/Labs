@@ -1,0 +1,6 @@
+     C++ was designed with a bias toward system programming and 
+
+     embedded, resource-constrained software and large systems.
+
+
+     That's it.
